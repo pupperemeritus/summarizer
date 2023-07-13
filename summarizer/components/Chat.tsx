@@ -67,7 +67,7 @@ export const Chat: React.FC = () => {
     const last100messages = newMessages.slice(-100); // remember last 100 messages
 
     try {
-      const response = await fetch('http://localhost:8080/summarize/', {
+      const response = await fetch('http://summarizer-backend-pupperemeritus.vercel.app/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
