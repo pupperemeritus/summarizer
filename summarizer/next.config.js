@@ -15,7 +15,7 @@ const nextConfig = {
     return [
       {
         // matching all API routes
-        source: "http://summarizer-backend-pupperemeritus.vercel.app/:path*",
+        source: "https://summarizer-backend-pupperemeritus.vercel.app/:path*",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" },
